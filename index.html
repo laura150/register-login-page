@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="banner">
+       <div class="form-box">
+           <div class="slide-box">
+            <div id="button"></div>
+               <button type = button class="toggle"onclick="signup()" >Sign up</button>
+               <button  type = button class="toggle" onclick="login()">Login</button>
+            
+           </div>
+           <div class="social-icons">
+               <img src="images/facebook.png" alt="">
+               <img src="images/twitter.png" alt="">
+               <img src="images/google.png" alt="">
+           </div>
+           <form id ="signup" class="myform">
+             <input type="text" class="input-field" placeholder="Username" required> 
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+            <button type="submit" class="submit-btn">Sign Up</button>
+           </form>
+           <form id ="login" class="myform">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember password</span>
+            <button type="submit" class="submit-btn">Login</button>
+           </form>
+       </div>
+   </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
